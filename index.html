@@ -1,25 +1,134 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" href="img/prop,jpg">
-  <title>Portafolio Cristian</title>
-</head>
-<body>
-  <h1>Portafolio de Cristian</h1>
+  <meta charset="utf-8"> <!-- codificacion -->
+  <meta name="viewport" content="width=device-width"> <!-- Contenido adaptable al movil/pc/tablet... -->
+  <title>Portafolio Cristian</title> <!-- Titulo de la pestaña -->
+
+  <meta name="robots" content="index, follow"> <!-- Importante para Google -->
+    
+  <meta name="theme-color" content="#8f7ada"> <!-- Color de la barra de navegacion -->
   
+  <link rel="stylesheet" href="style.css"> <!-- Enlazar con CSS-->
+  <link rel="icon" type="type.jpg" href="img/prop.jpg"> <!-- Establecer icono de la pag en la pestaña -->
+  
+  <meta name="description" content="Porfolio de cristian, 15 años de experiencia como Ingeniero de software"> <!-- Descripcion de la pagina en Google -->
+  
+  <!-- OPENGRAPH AND CEO (enlaces) -->
+  <meta property="og:title" content="Portafolio de Ingeniero de software"> <!-- Establecer titulo al compartir -->
+  <meta property="og:description" content="En esta web encontraras el porfolio de Cristian, un ingeniero de sofware con mas de 15 años de experiencia"> <!-- Establecer descripcion al compartir -->
+  <meta property="og:image" content="img/prop.jpg"> <!-- Establecer imagen al compartir -->
+  <meta property="og:img:alt" content="Foto del ingeniero(Cristian)"> <!-- Establecer descripcion de la imagen al compartir -->
+  
+  <link rel="alternate" href="https://cris.dev/en" hreflang="en-GB"> <!-- Establecer pagina alternativa si existe, importante para que Google no detecte contenido duplicado --> 
+  <link rel="canonical" href="https//crisdev/"> <!-- Establecer pagina original del contenido -->
+  
+  <!-- Estilizar sin archivo css (no reconmedable) -->
+  <style>   
+    body {
+      background: rgba(135, 221, 255, 0.9)
+    }
+  </style>  
+  
+</head>
+
+<body>
+  <header>
+   <h1>Portafolio de Cristian</h1>
+    
+   <nav>
+     <!-- Enlaces internos -->
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+     <!-- Enlaces externos -->
+      <a 
+        href="https://twitch.tv/midudev" 
+        target="_blank"
+        rel="noreferrer">Twitch</a>     
+   </nav>  
+  </header>
+  
+  <main>
   <p>+15 años de experiencia como <strong>Ingeniero de software</strong>. Creador y divulgador de programacion</p>
   
-  <h2>Experiencia</h2>
+  <h2 id="experiencia">Experiencia</h2>
   <ul>
     <li>Empresa 1 - 2022</li>
     <li>Empresa 2 - 2020</li>
     <li>Empresa 3 - 2015</li>
   </ul>
   
-  <img width="200" 
+  <img 
+       width="200" 
        alt="Foto de persona soriendo con camiseta gris y brazos cruzados." 
        title="Foto del propietario del portafolio" 
-       src="img/prop.jpg"/>
+       src="img/prop.jpg" />
+  
+  <h2 id="proyectos">Proyectos realizados</h2>
+  
+  <aside>
+    <header>
+      <h3>Mis tecnoologias <span>favoritas</span></h3>
+    </header>
+    <ol>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+      <li>Node.js</li>
+    </ol>
+  <aside>
+    
+  <button>
+    Haz click aqui
+  </button>
+    
+  <section>
+    <article>
+      <header>
+        <h4>Sitio Web Corporativo</h4>
+      </header>
+      <p>
+        Desarrolo de un sitio web corporativo con una interfax amigable y moderna.
+      </p>
+      <footer>
+        <small>Tecnologias utilizadas: HTML, CSS, JavaScript</small>
+      </footer> 
+    </article>
+  </section>
+  
+  <section>
+    <article>
+      <header>
+        <h4>Sitio Web Corporativo</h4>
+      </header>
+      <p>
+        Desarrolo de un sitio web corporativo con una interfax amigable y moderna.
+      </p>
+      <footer>
+        <small>Tecnologias utilizadas: HTML, CSS, JavaScript</small>
+      </footer> 
+    </article>
+  </section>
+    
+  <section>
+    <article>
+      <header>
+        <h4>Sitio Web Corporativo</h4>
+      </header>
+      <p>
+        Desarrolo de un sitio web corporativo con una interfax amigable y moderna.
+      </p>
+      <footer>
+        <small>Tecnologias utilizadas: HTML, CSS, JavaScript</small>
+      </footer> 
+    </article>
+  </section>
+  </main>  
+  <footer>
+   Copyright ○ 2025 - Porfolio de Cristian 
+    
+    <a href="mailto:cristiansmbach@gmail.com?subject=Correo desde pagina web&body=Te escribo porque...">Enviame un correo</a>
+    <a href="tel:+34685181049">Llamame</a>
+  </footer>
 </body>
 </html>

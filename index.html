@@ -30,6 +30,8 @@
     }
   </style>  
   
+  
+  
 </head>
 
 <body>
@@ -47,7 +49,30 @@
         rel="noreferrer">Twitch</a>     
    </nav>  
   </header>
+
+  <dialog id="dialog">
+    <h1>Sabías que puedes abrir una modal así?</h1>
+    <p>Y es nativo</p>
+    <button id="hide">Cerrar modal</button>
+  </dialog>
+
+  <button id="open">Ver más información</button>
   
+  <script>
+    window.show.addEventListener("click", () => {
+      window.dialog.showModal()
+    })
+    window.hide.addEventListener("click", () => {
+      window.dialog.close()
+    })
+
+  </script>
+  
+
+  <!-- Comprobar si se puede con enlaces externos o tienen que estar descargados en el dispositivo-->
+  <video autoplay muted poster="" loop controls src="https//youtu.be/3nYLTiY5skU?si=jWEctGDS5ij2qTrZ"></video>
+  <audio autoplay muted poster="" loop controls src="https//youtu.be/3nYLTiY5skU?si=jWEctGDS5ij2qTrZ"></audio>
+
   <main>
   <p>+15 años de experiencia como <strong>Ingeniero de software</strong>. Creador y divulgador de programacion</p>
   
@@ -59,6 +84,7 @@
   </ul>
   <a download href="img/prop.jpg">
    <img 
+       loading="lazy"
        width="200" 
        alt="Foto de persona soriendo con camiseta gris y brazos cruzados." 
        title="Foto del propietario del portafolio" 
@@ -123,6 +149,23 @@
         <small>Tecnologias utilizadas: HTML, CSS, JavaScript</small>
       </footer> 
     </article>
+  </section>
+
+  <section>
+    <h2>Preguntas frecuentes</h2>
+
+    <details>
+      <summary>¿Que estudios tienes?</summary>
+      <p>Estudié en la Universidad de Málaga una Ingienería Infomática</p>
+    </details>
+    <details>
+      <summary>¿Cúales son tu shobbbies?</summary>
+      <p>Mis hobbies son progrmar y escuchar música :)</p>
+    </details>
+    <details>
+      <sumamry>¿cúal es tu lenguaje favorito</sumamry>
+      <p>Me gusta mucho el css ya que puedo estilizar la pagina a mi gusto y siempre queda genial.</p>
+    </details>
   </section>
     
   <section>
@@ -192,7 +235,7 @@
           </datalist>
         </div>
       </fieldset>
-      <input type="submit" value="Enviar contacto">
+      <button type="submit">Enviar contacto</button> 
     </form>    
   </section>
     

@@ -57,12 +57,13 @@
     <li>Empresa 2 - 2020</li>
     <li>Empresa 3 - 2015</li>
   </ul>
-  
-  <img 
+  <a download href="img/prop.jpg">
+   <img 
        width="200" 
        alt="Foto de persona soriendo con camiseta gris y brazos cruzados." 
        title="Foto del propietario del portafolio" 
        src="img/prop.jpg" />
+  </a>
   
   <h2 id="proyectos">Proyectos realizados</h2>
   
@@ -70,10 +71,10 @@
     <header>
       <h3>Mis tecnoologias <span>favoritas</span></h3>
     </header>
-    <ol>
-      <li>HTML</li>
+    <ol type="1" reversed start="10">
+      <li >HTML</li>
       <li>CSS</li>
-      <li>JavaScript</li>
+      <li value="5">JavaScript</li>
       <li>Node.js</li>
     </ol>
   <aside>
@@ -123,12 +124,79 @@
       </footer> 
     </article>
   </section>
+    
+  <section>
+    <h2>Formulario de contacto</h2>
+    
+    <form method="post" action="/">
+      <fieldset>
+        <legend>Informacion personal</legend>
+     
+     <div>   
+      <label for="name"> Nombre:
+        <input 
+          required
+          type="text" 
+          id="name" 
+          name="name" 
+          placeholder="Jose">
+      </label>
+     </div>
+      <label for="email"> Email:
+        <input 
+          required
+          type=email 
+          id="email" 
+          name="emal" 
+          placeholder="Jose@gmail.com">
+      </label>
+      </fieldset>
+      <fieldset>
+        <legend>Informacion adicional</legend>
+        <label for="name"> Telefono:
+         <input 
+          required=""
+          patter="[0-9]{9}"
+          type="tel" 
+          id="telefono" 
+          name="telefono" 
+          placeholder="+34600000000">
+        </label>
+      </fieldset>
+      <fieldset>
+        <legend>Otros</legend>
+        <div>
+          <label for="reason">¿Por que quieres contactar?</label>
+          <select id="reason" name="reason">
+            <option value="1">Trabajo</option>
+            <option value="2">Duda</option>
+            <option value="3">Mas informacion</option>
+           </select>
+        </div> 
+        <div>
+          <label for="terms">¿Aceptas los terminos  y condiciones?</label>
+          <input
+            type="checkbox"
+            id="terms"
+            name="terms"
+            required>
+        </div>
+      </fieldset>
+      <input type="submit" value="Enviar contacto">
+    </form>    
+  </section>
+    
+    
+    
+    
+    
   </main>  
   <footer>
-   Copyright ○ 2025 - Porfolio de Cristian 
+   Copyright ○ 2025 - Porfolio de Cristian <br>
     
-    <a href="mailto:cristianshs@gmail.com?subject=Correo desde pagina web&body=Te escribo porque...">Enviame un correo</a>
+    <a href="mailto:cristians@gmail.com?subject=Correo desde pagina web&body=Te escribo porque...">Enviame un correo</a>
     <a href="tel:+34685172040">Llamame</a>
+    <a href="whatsapp://send?phone=+34685181049&text=Hola, estoy interesado en mas informacion. ¿Podrias enviarmela cuando tengas tiempo? Gracias">Enviar un whatsapp</a>
   </footer>
 </body>
 </html>

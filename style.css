@@ -1,0 +1,44 @@
+/* Asi se añaden comentarios en CSS */
+
+h1 {
+  /* Color con rgba (a= transparencia 0.x o x%)*/
+  /* Color: rgba(0, 0, 0, .7.); */
+  /* Color con rgb ( / para poner la transparencia) */  
+  color: #09f;
+  font-family: monospace;
+}
+
+body {
+  background: #dbfbff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segeo UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif 
+}
+
+/* Lo mas recomendable son las clases */
+.link {
+  color: red;
+}
+
+.link:hoover {
+  color: yellow;
+}
+
+.link:active {
+  color: green;
+}
+
+
+#show {
+  background: #09f;
+  color: white; /*Cambiar el color de las letras*/
+  border: 0; /* Quitar el borde*/
+}
+
+article {
+  color: red;
+}
+
+.description {
+  border: 1px;
+  border-style: solid;
+  border-color: red;
+}

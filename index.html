@@ -10,55 +10,57 @@
   <meta name="theme-color" content="#8f7ada"> <!-- Color de la barra de navegacion -->
   
   <link rel="stylesheet" href="style.css"> <!-- Enlazar con CSS-->
-  <link rel="icon" type="type.jpg" href="img/prop.jpg"> <!-- Establecer icono de la pag en la pestaña -->
+  <link rel="icon" type="type.jpg" href="src/prop.jpg"> <!-- Establecer icono de la pag en la pestaña -->
   
   <meta name="description" content="Porfolio de cristian, 15 años de experiencia como Ingeniero de software"> <!-- Descripcion de la pagina en Google -->
   
   <!-- OPENGRAPH AND CEO (enlaces) -->
   <meta property="og:title" content="Portafolio de Ingeniero de software"> <!-- Establecer titulo al compartir -->
   <meta property="og:description" content="En esta web encontraras el porfolio de Cristian, un ingeniero de sofware con mas de 15 años de experiencia"> <!-- Establecer descripcion al compartir -->
-  <meta property="og:image" content="img/prop.jpg"> <!-- Establecer imagen al compartir -->
+  <meta property="og:image" content="src/prop.jpg"> <!-- Establecer imagen al compartir -->
   <meta property="og:img:alt" content="Foto del ingeniero(Cristian)"> <!-- Establecer descripcion de la imagen al compartir -->
   
   <link rel="alternate" href="https://cris.dev/en" hreflang="en-GB"> <!-- Establecer pagina alternativa si existe, importante para que Google no detecte contenido duplicado --> 
   <link rel="canonical" href="https//crisdev/"> <!-- Establecer pagina original del contenido -->
   
   <!-- Estilizar sin archivo css (no reconmedable) -->
-  <style>   
+  <!-- <style>   
     body {
       background: rgba(135, 221, 255, 0.9)
     }
-  </style>  
+  </style>  -->
   
   
   
 </head>
 
-<body>
-  <header>
-   <h1>Portafolio de Cristian</h1>
+<body> 
+  <header> <!-- "Titulo" del contenido de la pagina web-->
+   <h1>Portafolio de Cristian  </h1>
     
-   <nav>
+   <nav> <!-- Seccion de la pagina web que va a permitir al usuario navegar en la pagina o a sitios externos -->
      <!-- Enlaces internos -->
-      <a href="#experiencia">Experiencia</a>
-      <a href="#proyectos">Proyectos</a>
+      <a class="link" href="#experiencia">Experiencia</a>
+      <a href="#proyectos" class="link">Proyectos</a>
      <!-- Enlaces externos -->
       <a 
+        class="link" 
         href="https://twitch.tv/midudev" 
-        target="_blank"
-        rel="noreferrer">Twitch</a>     
+        target="_blank" 
+        rel="noreferrer">Twitch</a> <!-- Utilizamos noferrer para mantener privacidad de usuarios. _blank para abrir el enlace en una nueva pestaña-->
    </nav>  
   </header>
 
-  <dialog id="dialog">
-    <h1>Sabías que puedes abrir una modal así?</h1>
+  <dialog id="dialog"> <!-- Abre un cuadro que muestra mas informacion-->
+    <h1>Sabías que puedes abrir un modal así?</h1>
     <p>Y es nativo</p>
     <button id="hide">Cerrar modal</button>
   </dialog>
 
-  <button id="open">Ver más información</button>
+  <button id="show">Ver más información</button>
   
-  <script>
+  <!-- Codigo con JavaScript que permite abrir/cerrar nuestro modal o cuadro de dialogo -->
+  <script> 
     window.show.addEventListener("click", () => {
       window.dialog.showModal()
     })
@@ -69,35 +71,35 @@
   </script>
   
 
-  <!-- Comprobar si se puede con enlaces externos o tienen que estar descargados en el dispositivo-->
-  <video autoplay muted poster="" loop controls src="https//youtu.be/3nYLTiY5skU?si=jWEctGDS5ij2qTrZ"></video>
-  <audio autoplay muted poster="" loop controls src="https//youtu.be/3nYLTiY5skU?si=jWEctGDS5ij2qTrZ"></audio>
+  <!-- Etiquetas que permiten añadir videos y audios a nuestra web (tenemos que tenerlos en el proyecto-->
+  <!-- <video poster="src/relax.jpg" loop controls src="src/videorel.mp4"></video>
+  <audio loop controls src="src/audiorel.mp3"></audio> -->
 
-  <main>
-  <p>+15 años de experiencia como <strong>Ingeniero de software</strong>. Creador y divulgador de programacion</p>
+  <main> <!-- Dentro de main, va el contenido principal de la pagina -->
+  <p class="description">+15 años de experiencia como <strong>Ingeniero de software</strong>. Creador y divulgador de programacion</p>
   
   <h2 id="experiencia">Experiencia</h2>
-  <ul>
+  <ul> <!-- Nos permite hacer una lista desordenada (Sin numeros) -->
     <li>Empresa 1 - 2022</li>
     <li>Empresa 2 - 2020</li>
     <li>Empresa 3 - 2015</li>
   </ul>
-  <a download href="img/prop.jpg">
+  <a download href="src/prop.jpg"> <!-- La imagen con el atributo download se descarga cuando haces click-->
    <img 
-       loading="lazy"
+       loading="lazy" 
        width="200" 
        alt="Foto de persona soriendo con camiseta gris y brazos cruzados." 
        title="Foto del propietario del portafolio" 
-       src="img/prop.jpg" />
+       src="src/prop.jpg" /> <!-- Loading optimiza un poco la pagina para no cargar la imagen si no se ve, title nos pone un titulo para cuando el cursor este arriba de la imagen-->
   </a>
   
   <h2 id="proyectos">Proyectos realizados</h2>
   
-  <aside>
+  <aside> <!-- Contenido aparte del que hemos dicho qeu vamos a hablar pero que tiene sentido dentro de estee (Significado semntico)-->
     <header>
-      <h3>Mis tecnoologias <span>favoritas</span></h3>
+      <h3>Mis tecnoologias <span>favoritas</span></h3> <!-- Span es una etiqueta para aislar una parte y poder estilizarlo despues.-->
     </header>
-    <ol type="1" reversed start="10">
+    <ol type="1" reversed start="10"> <!-- Hacemos una lista ordenada en reversa y modificable-->
       <li >HTML</li>
       <li>CSS</li>
       <li value="5">JavaScript</li>
@@ -109,8 +111,8 @@
     Haz click aqui
   </button>
     
-  <section>
-    <article>
+  <section> <!-- Dividimos el contenido del resto de la informacion de la pagina -->
+    <article> <!-- Contenido que si lo extraemos sigue manteniendo el sentido y coherencia -->
       <header>
         <h4>Sitio Web Corporativo</h4>
       </header>
@@ -119,8 +121,7 @@
       </p>
       <footer>
         <small>Tecnologias utilizadas: HTML, CSS, JavaScript</small>
-      </footer> 
-    </article>
+      </footer>     </article>
   </section>
   
   <section>
@@ -154,16 +155,16 @@
   <section>
     <h2>Preguntas frecuentes</h2>
 
-    <details>
-      <summary>¿Que estudios tienes?</summary>
-      <p>Estudié en la Universidad de Málaga una Ingienería Infomática</p>
+    <details> <!-- Creamos una parte con preguntas y un desplegable con la respuesta -->
+      <summary>¿Que estudios tienes?</summary> <!-- Pregunta -->
+      <p>Estudié en la Universidad de Málaga una Ingienería Infomática</p> <!-- Respuesta -->
     </details>
     <details>
       <summary>¿Cúales son tu shobbbies?</summary>
       <p>Mis hobbies son progrmar y escuchar música :)</p>
     </details>
     <details>
-      <sumamry>¿cúal es tu lenguaje favorito</sumamry>
+      <summary>¿Cúal es tu lenguaje favorito?</summary>
       <p>Me gusta mucho el css ya que puedo estilizar la pagina a mi gusto y siempre queda genial.</p>
     </details>
   </section>
@@ -171,18 +172,18 @@
   <section>
     <h2>Formulario de contacto</h2>
     
-    <form method="post" action="/">
-      <fieldset>
-        <legend>Informacion personal</legend>
+    <form method="post" action="/"> <!-- Creamos un formulario -->
+      <fieldset> <!-- Creamos un campo para clasificar los datos que se van a introducir -->
+        <legend>Informacion personal</legend> <!-- Ponemos el titulo al campo de clasificacion -->
      
-     <div>   
-      <label for="name"> Nombre:
-        <input 
+     <div>   <!-- Pedimos el primer dato y creamos un contenedor para ello -->
+      <label for="name"> Nombre: <!-- Decimos el dato que estamos pidiendo -->
+        <input
           required
           type="text" 
           id="name" 
           name="name" 
-          placeholder="Jose">
+          placeholder="Jose"> <!-- Creamos el espacio para que el usuario nos de el dato que le solicitamos -->
       </label>
      </div>
       <label for="email"> Email:
@@ -210,8 +211,8 @@
         <legend>Otros</legend>
         <div>
           <label for="reason">¿Por que quieres contactar?</label>
-          <select id="reason" name="reason">
-            <option value="1">Trabajo</option>
+          <select id="reason" name="reason"> <!-- Creamos un selector de opciones para que el usuario elija entre las opciones disponibles -->
+            <option value="1">Trabajo</option> <!-- Creamos las opciones que le vamos a dar al usuario pa elegir -->
             <option value="2">Duda</option>
             <option value="3">Mas informacion</option>
            </select>
@@ -225,13 +226,13 @@
             required>
         </div>
         <div>
-          <datalist id="languages">
-            <option value="JavaScript">JavaScript</option>
-            <option value="Python">Python</option>
-            <option value="Java">Java</option>
-            <option value="C#">c#</option>
-            <label>¿Qué lenguaje te gustaría aprender?</label>
-            <input list="languages" name="languiages">
+          <label>¿Que lenguaje te gustaria aprender?</label>
+          <input type="text" list="lenguajes" name="lenguajes"> 
+          <datalist id="lenguajes"> <!-- Creamos un campo en el que se puede escribir y autocompletar segun lo que escriba el usuario y las opciones que nostoros hayamos dado -->
+            <option value="JavaScript">Para hacer interactiva una web</option> <!-- creamos las opciones que le vamos a dar al usuario para elegir y atocompletar -->
+            <option value="Python"></option>
+            <option value="C#"></option>
+            <option value="CSS">Para estilizar webs</option>
           </datalist>
         </div>
       </fieldset>
@@ -247,9 +248,23 @@
   <footer>
    Copyright ○ 2025 - Porfolio de Cristian <br>
     
-    <a href="mailto:cristians@gmail.com?subject=Correo desde pagina web&body=Te escribo porque...">Enviame un correo</a>
-    <a href="tel:+34685172040">Llamame</a>
-    <a href="whatsapp://send?phone=+34685181049&text=Hola, estoy interesado en mas informacion. ¿Podrias enviarmela cuando tengas tiempo? Gracias">Enviar un whatsapp</a>
+    <a href="mailto:cristians@gmail.com?subject=Correo desde pagina web&body=Te escribo porque...">Enviame un correo</a> <!-- Creamos un link que permite al usuario enviarnos un correo directamente (Solo navegadores en los que hayan iniciado sesion -->
+    <a href="tel:+34685172040">Llamame</a> <!-- Creamos un link que permite el usuario abrir el telefono con nuestro numero marcado y llamarnos -->
+    <a href="whatsapp://send?phone=+34685181049&text=Hola, estoy interesado en mas informacion. ¿Podrias enviarmela cuando tengas tiempo? Gracias">Enviar un whatsapp</a> <!-- Creamos un link que le abre al usuario el whatsapp con un chat con nosotros abierto y un mensaje opcional -->
   </footer>
+    
+    
+    
+    
+    <!-- Pruebas para el curso de CSS -->
+    <article>
+      <h6> Hola mundo </h6>
+    </article>
+    
+    
+    
+    
+    
+    
 </body>
 </html>

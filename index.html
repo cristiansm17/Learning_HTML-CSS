@@ -1,270 +1,143 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8"> <!-- codificacion -->
-  <meta name="viewport" content="width=device-width"> <!-- Contenido adaptable al movil/pc/tablet... -->
-  <title>Portafolio Cristian</title> <!-- Titulo de la pestaña -->
-
-  <meta name="robots" content="index, follow"> <!-- Importante para Google -->
-    
-  <meta name="theme-color" content="#8f7ada"> <!-- Color de la barra de navegacion -->
-  
-  <link rel="stylesheet" href="style.css"> <!-- Enlazar con CSS-->
-  <link rel="icon" type="type.jpg" href="src/prop.jpg"> <!-- Establecer icono de la pag en la pestaña -->
-  
-  <meta name="description" content="Porfolio de cristian, 15 años de experiencia como Ingeniero de software"> <!-- Descripcion de la pagina en Google -->
-  
-  <!-- OPENGRAPH AND CEO (enlaces) -->
-  <meta property="og:title" content="Portafolio de Ingeniero de software"> <!-- Establecer titulo al compartir -->
-  <meta property="og:description" content="En esta web encontraras el porfolio de Cristian, un ingeniero de sofware con mas de 15 años de experiencia"> <!-- Establecer descripcion al compartir -->
-  <meta property="og:image" content="src/prop.jpg"> <!-- Establecer imagen al compartir -->
-  <meta property="og:img:alt" content="Foto del ingeniero(Cristian)"> <!-- Establecer descripcion de la imagen al compartir -->
-  
-  <link rel="alternate" href="https://cris.dev/en" hreflang="en-GB"> <!-- Establecer pagina alternativa si existe, importante para que Google no detecte contenido duplicado --> 
-  <link rel="canonical" href="https//crisdev/"> <!-- Establecer pagina original del contenido -->
-  
-  <!-- Estilizar sin archivo css (no reconmedable) -->
-  <!-- <style>   
-    body {
-      background: rgba(135, 221, 255, 0.9)
-    }
-  </style>  -->
-  
-  
-  
+  <meta charset="utf-8">
+  <meta name="viewport" content="device-width">
+  <title>Planets data</title>
+  <link href="planets-data.css" rel="stylesheet" type="text/css">
 </head>
-
-<body> 
-  <header> <!-- "Titulo" del contenido de la pagina web-->
-   <h1>Portafolio de Cristian  </h1>
-    
-   <nav> <!-- Seccion de la pagina web que va a permitir al usuario navegar en la pagina o a sitios externos -->
-     <!-- Enlaces internos -->
-      <a class="link" href="#experiencia">Experiencia</a>
-      <a href="#proyectos" class="link">Proyectos</a>
-     <!-- Enlaces externos -->
-      <a 
-        class="link" 
-        href="https://twitch.tv/midudev" 
-        target="_blank" 
-        rel="noreferrer">Twitch</a> <!-- Utilizamos noferrer para mantener privacidad de usuarios. _blank para abrir el enlace en una nueva pestaña-->
-   </nav>  
-  </header>
-
-  <dialog id="dialog"> <!-- Abre un cuadro que muestra mas informacion-->
-    <h1>Sabías que puedes abrir un modal así?</h1>
-    <p>Y es nativo</p>
-    <button id="hide">Cerrar modal</button>
-  </dialog>
-
-  <button id="show">Ver más información</button>
-  
-  <!-- Codigo con JavaScript que permite abrir/cerrar nuestro modal o cuadro de dialogo -->
-  <script> 
-    window.show.addEventListener("click", () => {
-      window.dialog.showModal()
-    })
-    window.hide.addEventListener("click", () => {
-      window.dialog.close()
-    })
-
-  </script>
-  
-
-  <!-- Etiquetas que permiten añadir videos y audios a nuestra web (tenemos que tenerlos en el proyecto-->
-  <!-- <video poster="src/relax.jpg" loop controls src="src/videorel.mp4"></video>
-  <audio loop controls src="src/audiorel.mp3"></audio> -->
-
-  <main> <!-- Dentro de main, va el contenido principal de la pagina -->
-  <p class="description">+15 años de experiencia como <strong>Ingeniero de software</strong>. Creador y divulgador de programacion</p>
-  
-  <h2 id="experiencia">Experiencia</h2>
-  <ul> <!-- Nos permite hacer una lista desordenada (Sin numeros) -->
-    <li>Empresa 1 - 2022</li>
-    <li>Empresa 2 - 2020</li>
-    <li>Empresa 3 - 2015</li>
-  </ul>
-  <a download href="src/prop.jpg"> <!-- La imagen con el atributo download se descarga cuando haces click-->
-   <img 
-       loading="lazy" 
-       width="200" 
-       alt="Foto de persona soriendo con camiseta gris y brazos cruzados." 
-       title="Foto del propietario del portafolio" 
-       src="src/prop.jpg" /> <!-- Loading optimiza un poco la pagina para no cargar la imagen si no se ve, title nos pone un titulo para cuando el cursor este arriba de la imagen-->
-  </a>
-  
-  <h2 id="proyectos">Proyectos realizados</h2>
-  
-  <aside> <!-- Contenido aparte del que hemos dicho qeu vamos a hablar pero que tiene sentido dentro de estee (Significado semntico)-->
-    <header>
-      <h3>Mis tecnoologias <span>favoritas</span></h3> <!-- Span es una etiqueta para aislar una parte y poder estilizarlo despues.-->
-    </header>
-    <ol type="1" reversed start="10"> <!-- Hacemos una lista ordenada en reversa y modificable-->
-      <li >HTML</li>
-      <li>CSS</li>
-      <li value="5">JavaScript</li>
-      <li>Node.js</li>
-    </ol>
-  <aside>
-    
-  <button>
-    Haz click aqui
-  </button>
-    
-  <section> <!-- Dividimos el contenido del resto de la informacion de la pagina -->
-    <article> <!-- Contenido que si lo extraemos sigue manteniendo el sentido y coherencia -->
-      <header>
-        <h4>Sitio Web Corporativo</h4>
-      </header>
-      <p>
-        Desarrolo de un sitio web corporativo con una interfax amigable y moderna.
-      </p>
-      <footer>
-        <small>Tecnologias utilizadas: HTML, CSS, JavaScript</small>
-      </footer>     </article>
-  </section>
-  
-  <section>
-    <article>
-      <header>
-        <h4>Sitio Web Corporativo</h4>
-      </header>
-      <p>
-        Desarrolo de un sitio web corporativo con una interfax amigable y moderna.
-      </p>
-      <footer>
-        <small>Tecnologias utilizadas: HTML, CSS, JavaScript</small>
-      </footer> 
-    </article>
-  </section>
-    
-  <section>
-    <article>
-      <header>
-        <h4>Sitio Web Corporativo</h4>
-      </header>
-      <p>
-        Desarrolo de un sitio web corporativo con una interfax amigable y moderna.
-      </p>
-      <footer>
-        <small>Tecnologias utilizadas: HTML, CSS, JavaScript</small>
-      </footer> 
-    </article>
-  </section>
-
-  <section>
-    <h2>Preguntas frecuentes</h2>
-
-    <details> <!-- Creamos una parte con preguntas y un desplegable con la respuesta -->
-      <summary>¿Que estudios tienes?</summary> <!-- Pregunta -->
-      <p>Estudié en la Universidad de Málaga una Ingienería Infomática</p> <!-- Respuesta -->
-    </details>
-    <details>
-      <summary>¿Cúales son tu shobbbies?</summary>
-      <p>Mis hobbies son progrmar y escuchar música :)</p>
-    </details>
-    <details>
-      <summary>¿Cúal es tu lenguaje favorito?</summary>
-      <p>Me gusta mucho el css ya que puedo estilizar la pagina a mi gusto y siempre queda genial.</p>
-    </details>
-  </section>
-    
-  <section>
-    <h2>Formulario de contacto</h2>
-    
-    <form method="post" action="/"> <!-- Creamos un formulario -->
-      <fieldset> <!-- Creamos un campo para clasificar los datos que se van a introducir -->
-        <legend>Informacion personal</legend> <!-- Ponemos el titulo al campo de clasificacion -->
-     
-     <div>   <!-- Pedimos el primer dato y creamos un contenedor para ello -->
-      <label for="name"> Nombre: <!-- Decimos el dato que estamos pidiendo -->
-        <input
-          required
-          type="text" 
-          id="name" 
-          name="name" 
-          placeholder="Jose"> <!-- Creamos el espacio para que el usuario nos de el dato que le solicitamos -->
-      </label>
-     </div>
-      <label for="email"> Email:
-        <input 
-          required
-          type=email 
-          id="email" 
-          name="emal" 
-          placeholder="Jose@gmail.com">
-      </label>
-      </fieldset>
-      <fieldset>
-        <legend>Informacion adicional</legend>
-        <label for="name"> Telefono:
-         <input 
-          required=""
-          patter="[0-9]{9}"
-          type="tel" 
-          id="telefono" 
-          name="telefono" 
-          placeholder="+34600000000">
-        </label>
-      </fieldset>
-      <fieldset>
-        <legend>Otros</legend>
-        <div>
-          <label for="reason">¿Por que quieres contactar?</label>
-          <select id="reason" name="reason"> <!-- Creamos un selector de opciones para que el usuario elija entre las opciones disponibles -->
-            <option value="1">Trabajo</option> <!-- Creamos las opciones que le vamos a dar al usuario pa elegir -->
-            <option value="2">Duda</option>
-            <option value="3">Mas informacion</option>
-           </select>
-        </div> 
-        <div>
-          <label for="terms">¿Aceptas los terminos  y condiciones?</label>
-          <input
-            type="checkbox"
-            id="terms"
-            name="terms"
-            required>
-        </div>
-        <div>
-          <label>¿Que lenguaje te gustaria aprender?</label>
-          <input type="text" list="lenguajes" name="lenguajes"> 
-          <datalist id="lenguajes"> <!-- Creamos un campo en el que se puede escribir y autocompletar segun lo que escriba el usuario y las opciones que nostoros hayamos dado -->
-            <option value="JavaScript">Para hacer interactiva una web</option> <!-- creamos las opciones que le vamos a dar al usuario para elegir y atocompletar -->
-            <option value="Python"></option>
-            <option value="C#"></option>
-            <option value="CSS">Para estilizar webs</option>
-          </datalist>
-        </div>
-      </fieldset>
-      <button type="submit">Enviar contacto</button> 
-    </form>    
-  </section>
-    
-    
-    
-    
-    
-  </main>  
-  <footer>
-   Copyright ○ 2025 - Porfolio de Cristian <br>
-    
-    <a href="mailto:cristians@gmail.com?subject=Correo desde pagina web&body=Te escribo porque...">Enviame un correo</a> <!-- Creamos un link que permite al usuario enviarnos un correo directamente (Solo navegadores en los que hayan iniciado sesion -->
-    <a href="tel:+34685172040">Llamame</a> <!-- Creamos un link que permite el usuario abrir el telefono con nuestro numero marcado y llamarnos -->
-    <a href="whatsapp://send?phone=+34685181049&text=Hola, estoy interesado en mas informacion. ¿Podrias enviarmela cuando tengas tiempo? Gracias">Enviar un whatsapp</a> <!-- Creamos un link que le abre al usuario el whatsapp con un chat con nosotros abierto y un mensaje opcional -->
-  </footer>
-    
-    
-    
-    
-    <!-- Pruebas para el curso de CSS -->
-    <article>
-      <h6> Hola mundo </h6>
-    </article>
-    
-    
-    
-    
-    
-    
+<body>
+  <h1>Planets data</h1>
+  <table>
+    <thead>
+      <caption>Data about the planets of our solar system (Planetary facts taken from <a href="http://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's Planetary Fact Sheet - Metric</a>).</caption>
+      <tr>
+        <td colspan="2">&nbsp</td>
+        <th id="Name" class="col-name-top">Name</th>
+        <th id="Mass">Mass (10<sup>24</sup>kg)</th>
+        <th id="Diameter">Diameter (km)</th>
+        <th id="Density">Density (kg/m<sup>3</sup>)</th>
+        <th id="Gravity">Gravity (m/s<sup>2</sup>)</th>
+        <th id="Length-of-day">Length of day (hours)</th>
+        <th id="Distance-from-sun">Distance from sun (10<sup>6</sup>)</th>
+        <th id="Mean-temperature">Mean temperature (ºC)</th>
+        <th id="Number-of-moons">Number of moons</th>
+        <th id="Notes">Notes</th>
+      </tr>
+      <tr>
+        <th id="Terrestrial-planets" colspan="2" rowspan="4">Terrestrial planets</th>
+        <th class="col-name" id="Mercury" headers="Name Terrestrial-planets">Mercury</th>
+        <td headers="Mercury Terrestrial-planets Mass">0.330</td>
+        <td headers="Mercury Terrestrial-planets Diameter">4,879</td>
+        <td headers="Mercury Terrestrial-planets Density">5427</td>
+        <td headers="Mercury Terrestrial-planets Gravity">3.7</td>
+        <td headers="Mercury Terrestrial-planets Length-of-days">4222.6</td>
+        <td headers="Mercury Terrestrial-planets Distance-from-sun">57.9</td>
+        <td headers="Mercury Terrestrial-planets Mean-temperature">167</td>
+        <td headers="Mercury Terrestrial-planets Number-of-moons">0</td>
+        <td headers="Mercury Terrestrial-planets Notes">Closest to the sun</td>
+      </tr>
+      <tr>
+        <th class="col-name" id="Venus" headers="Terrestrial-planets Name">Venus</th>
+        <td headers="Venus Terrestrial-planets Mass">4.87</td>
+        <td headers="Venus Terrestrial-planets Diameter">12,104</td>
+        <td headers="Venus Terrestrial-planets Density">5243</td>
+        <td headers="Venus Terrestrial-planets Gravity">8,9</td>
+        <td headers="Venus Terrestrial-planets Length-of-day">2802.0</td>
+        <td headers="Venus Terrestrial-planets Distance-from-sun">108.2</td>
+        <td headers="Venus Terrestrial-planets Mean-temperature">464</td>
+        <td headers="Venus Terrestrial-planets Number-of-moons">0</td>
+        <td headers="Venus Terrestrial-planets Notes">&nbsp</td>
+      </tr>
+      <tr>
+        <th class="col-name" id="Earth" headers="Name Terrestrial-planets">Earth</th>
+        <td headers="Earth Terrestrial-Planets Mass">5.97</td>
+        <td headers="Earth Terrestrial-Planets Diameter">12,756</td>
+        <td headers="Earth Terrestrial-Planets Density">5514</td>
+        <td headers="Earth Terrestrial-Planets Gravity">9.8</td>
+        <td headers="Earth Terrestrial-Planets Length-of-day">24.0</td>
+        <td headers="Earth Terrestrial-Planets Distance-from-sun">149.6</td>
+        <td headers="Earth Terrestrial-Planets Mean-temperature">15</td>
+        <td headers="Earth Terrestrial-Planets Number-of-moons">1</td>
+        <td headers="Earth Terrestrial-Planets Notes">Our world</td>
+      </tr>
+      <tr>
+        <th class="col-name" id="Mars" headers="Name Terrestrial-planets">Mars</th>
+        <td headers="Mars Terrestrial-planets Mass">0.642</td>
+        <td headers="Mars Terrestrial-planets Diameter">6,792</td>
+        <td headers="Mars Terrestrial-planets Density">3933</td>
+        <td headers="Mars Terrestrial-planets Gravity">3.7</td>
+        <td headers="Mars Terrestrial-planets Length-of-day">24.7</td>
+        <td headers="Mars Terrestrial-planets Distance-from-sun">227.9</td>
+        <td headers="Mars Terrestrial-planets Mean-temperature">-65</td>
+        <td headers="Mars Terrestrial-planets Number-of-moons">2</td>
+        <td headers="Mars Terrestrial-planets Notes">The red planet</td>
+      </tr>
+      <tr>
+        <th  id="Jovian-pLanets" rowspan="4">Jovian Planets</th>
+        <th id="Gas-giants" headers="Jovian-planets" rowspan="2">Gas giants</th>
+        <th class="col-name" id="Jupiter" headers="Name Gas-giants Jovian-planets">Jupiter</td>
+        <td headers="Jupiter Gas-giants Jovian-planets Mass">1898</td>
+        <td headers="Jupiter Gas-giants Jovian-planets Diameter">142,984</td>
+        <td headers="Jupiter Gas-giants Jovian-planets Density">1326</td>
+        <td headers="Jupiter Gas-giants Jovian-planets Gravity">23.1</td>
+        <td headers="Jupiter Gas-giants Jovian-planets Length-of-days">9.9</td>
+        <td headers="Jupiter Gas-giants Jovian-planets Distance-from-sun">778.6</td>
+        <td headers="Jupiter Gas-giants Jovian-planets Mean-temperature">-110</td>
+        <td headers="Jupiter Gas-giants Jovian-planets Number-of-moons">67</td>
+        <td headers="Jupiter Gas-giants Jovian-planets Notes">The largest planet</td>
+      </tr>
+      <tr>
+        <th class="col-name" id="Saturn" headers="Name Gas-giants Jovian-planets">Saturn</th>
+        <td headers="Saturn Gas-giants Jovian-planets Mass">568</td>
+        <td headers="Saturn Gas-giants Jovian-planets Diameter">120,536</td>
+        <td headers="Saturn Gas-giants Jovian-planets Density">687</td>
+        <td headers="Saturn Gas-giants Jovian-planets Gravity">9.0</td>
+        <td headers="Saturn Gas-giants Jovian-planets Length-of-days">10.7</td>
+        <td headers="Saturn Gas-giants Jovian-planets Distance-from-sun">1433.5</td>
+        <td headers="Saturn Gas-giants Jovian-planets Mean-temperature">-140</td>
+        <td headers="Saturn Gas-giants Jovian-planets Number-of-moons">62</td>
+        <td headers="Saturn Gas-giants Jovian-planets Notes">&nbsp</td>
+      </tr>
+      <tr>
+        <th id="Ice-giants" headers="Jovian-planets" rowspan="2">Ice giants</th>
+        <th  class="col-name" id="Uranus" headers="Name Ice-giants Jovian-planets">Uranus</th>
+        <td headers="Uranus Ice-giants Jovian-planets Mass">86.8</td>
+        <td headers="Uranus Ice-giants Jovian-planets Diameter">51,118</td>
+        <td headers="Uranus Ice-giants Jovian-planets Density">1271</td>
+        <td headers="Uranus Ice-giants Jovian-planets Gravity">8.7</td>
+        <td headers="Uranus Ice-giants Jovian-planets Length-of-days">17.2</td>
+        <td headers="Uranus Ice-giants Jovian-planets Distance-from-sun">2872.5</td>
+        <td headers="Uranus Ice-giants Jovian-planets Mean-temperature">-195</td>
+        <td headers="Uranus Ice-giants Jovian-planets Number-of-moons">27</td>
+        <td headers="Uranus Ice-giants Jovian-planets Notes">&nbsp</td>
+      </tr>
+      <tr>
+        <th  class="col-name" id="Neptune" headers="Name Ice-giants Jovian-planets">Neptune</th>
+        <td headers="Neptune Ice-giants Jovian-planets Mass">102</td>
+        <td headers="Neptune Ice-giants Jovian-planets Diameter">49,528</td>
+        <td headers="Neptune Ice-giants Jovian-planets Density">1638</td>
+        <td headers="Neptune Ice-giants Jovian-planets Gravity">11.0</td>
+        <td headers="Neptune Ice-giants Jovian-planets Length-of-days">16.1</td>
+        <td headers="Neptune Ice-giants Jovian-planets Distance-from-sun">4495.1</td>
+        <td headers="Neptune Ice-giants Jovian-planets Mean-temperature">-200</td>
+        <td headers="Neptune Ice-giants Jovian-planets Numberof-moons">14</td>
+        <td headers="Neptune Ice-giants Jovian-planets Notes">&nbsp</td>
+      </tr>
+      <tr>
+        <th id="Dwarf-planets" colspan="2">Dwarf planets</th>
+        <th class="col-name-bottom" id="Plato" headers="Name Dwarf-planets">Plato</th>
+        <td headers="Plato Dwarf-planets Mass">0.0146</td>
+        <td headers="Plato Dwarf-planets Diameter">2,307</td>
+        <td headers="Plato Dwarf-planets Density">2095</td>
+        <td headers="Plato Dwarf-planets Gravity">0.7</td>
+        <td headers="Plato Dwarf-planets Length-of-days">153.3</td>
+        <td headers="Plato Dwarf-planets Distance-from-sun">5906.4</td>
+        <td headers="Plato Dwarf-planets Mean-temperature">-225</td>
+        <td headers="Plato Dwarf-planets Number-of-moons">5</td>
+        <td headers="Plato Dwarf-planets Notes">Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a>.</td>
+      </tr>        
+      </thead>
+  </table>
 </body>
 </html>
